@@ -1,0 +1,17 @@
+<div data-options="dxView : { name: 'newpage', title: 'New Page' } " >
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " >
+        <div data-bind="dxScrollView: {}">
+            <p data-bind="text: value" style="text-align: center; margin-top: 20px">Введите значение...</p>
+            <div data-bind="dxTextBox : { value: value }" style="margin: 10px 20px"></div>
+
+            <div data-bind="dxList: { dataSource: employees, grouped: true }">
+                <div data-options="dxTemplate: { name: 'group' }">
+                    <b><span data-bind="text: key"></span></b> (<span data-bind="text: items.length"></span>)
+                </div>
+                <div data-options="dxTemplate: { name: 'item' }">
+                    <span data-bind="text: name"></span> (hired at <span data-bind="text: hired"></span>)
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
