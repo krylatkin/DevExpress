@@ -7,10 +7,10 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>PhoneGap Example</name>
+    <name>Slideout</name>
 
     <description>
-        An example for phonegap build docs.
+        Dev Express Slideout Menu Demo.
     </description>
 
     <author href="https://build.phonegap.com" email="support@phonegap.com">
